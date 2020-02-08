@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  FA-200 - 2020 - Hitoshi Uchida
+
+  Wingspan     :  9.42 m    ( 30.91 ft )
+  lenght       :  7.96 m    ( 26.10 ft )
+  height       :  2.59 m    (  8.50 ft )
+  Empty mass   :   620 kg   (  1367 lb )
+  Engine       : Lycoming O-320-D2A  160 hp/2700rpm Weight:258lb
+  Cruise speed : 222 km/h ( 120 kt )
+  Max speed    : 237 km/h ( 139 kt )
+-->
+
+  <airplane mass="1367">
+
+  <approach speed="60" aoa="7" fuel="0.5">
+	<control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+	<control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+	<control-setting axis="/controls/flight/flaps" value="1.0"/>
+  </approach>
+
+  <cruise speed="131" alt="5000" fuel="1.0">
+	<control-setting axis="/controls/engines/engine[0]/throttle" value="0.75" />
+	<control-setting axis="/controls/engines/engine[0]/mixture" value="1.0" />
+  </cruise>
+
+  <cockpit x="0.14" y="0.27" z="0.45"/>
+
+  <fuselage ax="2.25" ay="0" az="0.0" bx="-1.2" by="0" bz="0.0" width="1.1" taper="0.8" midpoint="0.5" idrag="1.2"/>
+  <fuselage ax="-1.2" ay="0" az="0.0" bx="-5.0" by="0" bz="0.0" width="1.1" taper="0.1" midpoint="0.0" idrag="1.2"/>
+  
+  <wing x="0.0" y="0.55" z="-0.5"
+	taper="1.0" length="4.0" chord="1.5"  dihedral="6.5" camber="0.02" sweep="0" incidence="1.5" idrag="1.5">
+        <stall aoa="15" width="2.5" peak="1.25"/>
+	<flap0 start="0.15" end="0.5" lift="1.5" drag="2.0"/>
+        <flap1 start="0.5" end="0.9" lift="1.5" drag="1.2"/>
+	<control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+        <control-speed  control="FLAP0" transition-time="3.0"/>
+        <control-speed  control="FLAP1" transition-time="0.01"/>
+  </wing>
+
+  <hstab x="-4.8" y="0.05" z="0.0" chord="1.0" length="1.6" taper="1.0" camber="-0.1" sweep="0">
+         <stall aoa="20" width="3.0" peak="1.5"/>
+         <flap0 start="0.0" end="1.0" lift="1.5" drag="1.7"/>
+         <control-input axis="/controls/flight/elevator" control="FLAP0" src0="-1.0" src1="0.5" dst0="-1.0" dst1="0.5"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+         <control-output control="FLAP0" prop="/surface-positions/elevator-trim-pos-norm"/>
+  </hstab>
+
+  <vstab x="-4.8" y="0" z="0.0" chord="1.2" length="1.3" taper="0.5" sweep="20">
+	<stall aoa="20" width="3" peak="2.0"/>
+	<flap0 start="-0.2" end="1.0" lift="1.5" drag="1.2"/>
+	<control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+	<control-input axis="/controls/flight/rudder-trim" control="FLAP1" invert="true"/>
+	<control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+	<control-output control="FLAP1" prop="/surface-positions/rudder-trim-pos-norm"/>
+  </vstab>
+
+  <propeller x="1.8" y="0.0" z="0.0" mass="278" radius="0.96" moment="2"
+	cruise-speed="150" cruise-rpm="2700" cruise-alt="5000" cruise-power="160"
+	takeoff-power="160" takeoff-rpm="2700" fine-stop="1" coarse-stop="6" min-rpm="800">
+	<piston-engine eng-rpm="2700" alt="5000" eng-power="160"/>
+	<actionpt x="2.3" y="0" z="0.0" />
+	<control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+	<control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+	<control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+	<control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+  </propeller>
+
+  <gear x="-0.15" y="1.33" z="-1.43" compression="0.2" spring="0.5" damp="0.8" dfric="0.7" sfric="0.8">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <gear x="-0.15" y="-1.33" z="-1.43" compression="0.2" spring="0.5" damp="0.8" dfric="0.7" sfric="0.8">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <gear x="1.62" y="0" z="-1.38" compression="0.2" spring="0.5" damp="0.8" dfric="0.7" sfric="0.8">
+        <control-input axis="/controls/flight/rudder" control="STEER" square="true"
+	 src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
+  </gear>
+
+  <tank x="0.3" y="2.0" z="-0.3" capacity="156" />
+  <tank x="0.3" y="-2.0" z="-0.3" capacity="156" />
+
+  <ballast x="1.8" y="0" z="0.0" mass="300"/>
+
+</airplane>
+

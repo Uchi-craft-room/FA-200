@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+	<fuel-fraction>1.0</fuel-fraction>
+		<startup>
+			<splash-texture>Aircraft/FA-200/splash.png</splash-texture>
+		</startup>
+	<previews>
+		<preview>
+			<type>exterior</type>
+			<splash type="bool">true</splash>
+			<path>Splash/exterior1.jpg</path>
+		</preview>
+		<preview>
+			<type>exterior</type>
+			<splash type="bool">true</splash>
+			<path>Splash/exterior2.jpg</path>
+		</preview>
+		<preview>
+			<type>exterior</type>
+			<splash type="bool">true</splash>
+			<path>Splash/exterior3.jpg</path>
+		</preview>
+	</previews>
+	<sound>
+		<path archive="y">Aircraft/FA-200/Sounds/FA-200-sound.xml</path>
+	</sound>
+	<airport>
+		<runways>
+			<start-offset-m>20</start-offset-m>
+		</runways>
+	</airport>
+	<flaps>
+		<setting>0.00</setting>
+		<setting>0.40</setting>
+		<setting>0.70</setting>
+		<setting>1.00</setting>
+	</flaps>
+	<multiplay>
+		<chat_display>1</chat_display>
+		<generic>
+                	<int   n="0"  type="int">  0 </int>                                         <!--  0 immat -->
+                	<int   n="1"  type="int">  0 </int>                                         <!--  1 immat -->
+                	<int   n="2"  type="int">  0 </int>                                         <!--  2 immat -->
+                	<int   n="3"  type="int">  0 </int>                                         <!--  3 immat -->
+                	<int   n="4"  type="int">  0 </int>                                         <!--  4 immat -->
+                	<int   n="5"  type="int">  0 </int>                                         <!--  5 immat -->
+                	<int   n="6"  type="int"  alias="/sim/model/livery/show-immat"/>            <!--  6 Show immat -->
+			<int type="int">0</int>  <!-- 7 color -->
+			<int n="8" alias="/engines/engine/running"/>
+		</generic>
+	</multiplay>
+	<help>
+		<title>FA-200</title>
+		<key>
+			<name>d</name>
+			<desc>Canopy Open/Close</desc>
+		</key>
+	</help>
+	<menubar include="Dialogs/FA-200-menu.xml"/>
+  </sim>
+
+  <input>
+	<keyboard include="Nasal/FA-200-keyboard.xml"/>
+  </input>
+
+  <instrumentation>
+	<kma20 include="Models/interior/Instruments/kma20/kma20init.xml"/>
+  </instrumentation>
+
+  <nasal>
+	<doors>
+		<file>Aircraft/FA-200/Nasal/doors.nas</file>
+	</doors>
+	<FA-200>
+		<file>Aircraft/FA-200/Nasal/electrical.nas</file>
+		<file>Aircraft/FA-200/Nasal/light.nas</file>
+		<file>Aircraft/FA-200/Nasal/liveries.nas</file>
+		<file>Aircraft/FA-200/Nasal/immat.nas</file>
+		<file>Aircraft/FA-200/Nasal/instruments.nas</file>
+		<file>Aircraft/FA-200/Models/Interior/Instruments/kns80/KNS80.nas</file>
+		<file>Aircraft/FA-200/Nasal/vhf22.nas</file>
+		<file>Aircraft/FA-200/Nasal/vir32.nas</file>
+		<file>Aircraft/FA-200/Nasal/kma20.nas</file>
+		<file>Aircraft/FA-200/Nasal/light-manager.nas</file>
+		<file>Aircraft/FA-200/Nasal/FA-200.nas</file>
+	</FA-200>    
+	<M877>
+		<file>Aircraft/FA-200/Models/interior/Instruments/M877/M877.nas</file>
+	</M877>
+	<nav_scripts>
+		<file>Aircraft/FA-200/Nasal/nav_scripts.nas</file>
+	</nav_scripts>
+  </nasal>
+
+</PropertyList>
+

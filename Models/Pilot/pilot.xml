@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>pilot.ac</path>
+
+  <animation>
+	<name>AnimeTete</name>
+	<object-name>tete</object-name>
+	<object-name>sunglass</object-name>
+  </animation>
+
+  <!-- Visible invisible depuis le cockpit -->
+  <animation>
+	<type>select</type>
+	<object-name>tete</object-name>
+	<object-name>R-HAND</object-name>
+	<condition>
+		<not>
+			<equals>
+				<property>sim/current-view/view-number</property>
+				<value>0</value>
+			</equals>
+		</not>
+	</condition>
+  </animation>
+
+  <animation>
+	<type>select</type>
+	<object-name>sunglass</object-name>
+	<condition>
+		<and>
+			<not>
+				<equals>
+					<property>sim/current-view/view-number</property>
+					<value>0</value>
+				</equals>
+			</not>
+			<greater-than>
+				<property>instrumentation/altimeter/indicated-altitude-ft</property>
+				<value>10000</value>
+			</greater-than>
+		</and>
+	</condition>
+  </animation>
+
+  <animation>
+	<type>rotate</type>
+	<object-name>AnimeTete</object-name>
+	<property>controls/flight/elevator</property>
+	<factor> 15 </factor> 
+	<center>
+		<x-m> 0.150 </x-m>
+		<y-m> 0.005 </y-m>
+		<z-m> 0.380 </z-m>
+	</center>
+	<axis>
+		<x> 0 </x>
+		<y> 1 </y>
+		<z> 0 </z>
+	</axis>
+  </animation>
+
+  <animation>
+	<type>rotate</type>
+	<object-name>AnimeTete</object-name>
+	<property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+	<factor>50</factor>
+	<min-deg>-50</min-deg>
+	<max-deg>50</max-deg>
+	<center>
+		<x-m> 0.150 </x-m>
+		<y-m> 0.005 </y-m>
+		<z-m> 0.380 </z-m>
+	</center>
+	<axis>
+		<x> 0 </x>
+ 		<y> 0 </y>
+		<z> 1 </z>
+	</axis>
+  </animation>
+
+  <animation>
+	<type>rotate</type>
+	<object-name>AnimeTete</object-name>
+	<property>surface-positions/left-aileron-pos-norm</property>
+	<factor> 10.0</factor>
+	<center>
+ 		<x-m> 0.150 </x-m>
+		<y-m> 0.005 </y-m>
+		<z-m> 0.380 </z-m>
+	</center>
+	<axis>
+		<x> 1 </x>
+		<y> 0 </y>
+		<z> 0 </z>
+	</axis>
+  </animation> 
+
+</PropertyList>

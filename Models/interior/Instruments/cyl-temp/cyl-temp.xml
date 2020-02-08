@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>cyl-temp.ac</path>
+
+ <animation>
+	<type>material</type>
+	<object-name>Face</object-name>
+	<object-name>PointerTip</object-name>
+	<object-name>PointerCentre</object-name>   
+	<emission>
+		<factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+		<red>   0.50 </red>
+		<green> 0.25 </green>
+		<blue>  0.25 </blue>
+	</emission>
+ </animation>
+
+
+ <animation> 
+	<type>rotate</type>
+	<object-name>PointerCentre</object-name>
+	<object-name>PointerTip</object-name>
+	<property>engines/engine/oil-temperature-degf-norm</property>
+	<interpolation>
+		<entry><ind> 32</ind><dep>  0</dep></entry> <!--  0degc-->
+		<entry><ind> 68</ind><dep> 20</dep></entry> <!-- 20degc-->
+		<entry><ind>104</ind><dep> 40</dep></entry> <!-- 40degc-->
+		<entry><ind>140</ind><dep> 60</dep></entry> <!-- 60degc-->
+		<entry><ind>176</ind><dep> 80</dep></entry> <!-- 80degc-->
+		<entry><ind>212</ind><dep>100</dep></entry> <!--100degc-->
+		<entry><ind>230</ind><dep>110</dep></entry> <!--110degc-->
+		<entry><ind>248</ind><dep>120</dep></entry> <!--120degc-->
+	</interpolation>
+	<axis> 
+ 		<x> -1 </x>
+		<y>  0 </y>
+		<z>  0 </z>
+	</axis>
+	<center>
+		<x-m> 0.005 </x-m>
+		<y-m> 0 </y-m>
+		<z-m>-0.005 </z-m>  
+	</center>
+ </animation>         
+ 
+</PropertyList>
+

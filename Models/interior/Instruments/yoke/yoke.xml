@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>yoke.ac</path>
+
+  <animation>
+	<object-name>yoke-RH</object-name>
+	<object-name>yoke-LH</object-name>
+	<!-- Objets transparents -->
+  </animation>
+
+<!--
+  <animation>
+	<type>select</type>
+	<object-name>yoke-LH</object-name>
+	<condition>
+		<not>
+			<equals>
+				<property>sim/current-view/view-number</property>
+				<value> 0 </value>
+			</equals>
+		</not>
+	</condition>
+  </animation>
+
+  <animation>
+	<type>select</type>
+	<object-name>yoke-RH</object-name>
+	<condition>
+		<not>
+			<equals>
+				<property>sim/current-view/view-number</property>
+				<value> 10 </value>
+			</equals>
+		</not>
+	</condition>
+  </animation>
+
+-->
+
+  <animation>
+	<type>translate</type>
+	<object-name>yoke-RH</object-name>
+	<object-name>yoke-LH</object-name>
+	<property>controls/flight/elevator</property>
+	<factor> 0.07 </factor>
+	<axis>
+		<x> -1   </x>
+		<y>  0   </y>
+		<z> -0.2 </z>
+	</axis>
+  </animation>
+
+  <animation>
+	<type>rotate</type>
+	<object-name>yoke-RH</object-name>
+	<property>surface-positions/left-aileron-pos-norm</property>
+	<factor> 45.0</factor>
+	<center>
+		<x-m> -0.532 </x-m>
+		<y-m>  0.270 </y-m>
+		<z-m>  0.047 </z-m>
+	</center>
+	<axis>
+		<x> -1   </x>
+		<y>  0   </y>
+		<z> -0.2 </z>
+	</axis>
+  </animation> 
+
+  <animation>
+	<type>rotate</type>
+     	<object-name>yoke-LH</object-name>
+	<property>surface-positions/left-aileron-pos-norm</property>
+	<factor> 45.0</factor>
+	<center>
+		<x-m> -0.532 </x-m>
+		<y-m> -0.270 </y-m>
+		<z-m>  0.047 </z-m>
+	</center>
+	<axis>
+		<x> -1   </x>
+		<y>  0   </y>
+		<z> -0.2 </z>
+	</axis>
+  </animation> 
+
+</PropertyList>
+
+
+

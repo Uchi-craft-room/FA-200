@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>fuel-selector.ac</path>
+
+  <animation>
+	<type>material</type>
+	<object-name>lever</object-name>
+	<object-name>panel</object-name>
+	<emission>
+		<red>   0.5 </red>
+		<green> 0.25 </green>
+		<blue>  0.25 </blue>
+	<factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+	</emission>
+  </animation>
+
+<!-- LH -->
+  <animation>
+	<type>pick</type>
+	<visible>false</visible>
+	<object-name>LH</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>consumables/fuel/tank-selector</property>
+			<value>0</value>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/sound/click</property>
+		</binding>
+	</action>
+  </animation>
+
+  <animation>
+	<type>rotate</type>
+	<object-name>lever</object-name>
+	<property>consumables/fuel/tank[0]/selected</property>
+	<factor>-90</factor>
+	<axis>
+		<x> 0 </x>
+		<y> 0 </y>
+		<z> 1 </z>
+	</axis>
+  </animation>
+
+<!-- RH -->
+  <animation>
+	<type>pick</type>
+	<visible>false</visible>
+	<object-name>RH</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>consumables/fuel/tank-selector</property>
+			<value>1</value>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/sound/click</property>
+		</binding>
+	</action>
+  </animation>
+
+  <animation>
+	<type>rotate</type>
+	<object-name>lever</object-name>
+	<property>consumables/fuel/tank[1]/selected</property>
+	<factor>90</factor>
+	<axis>
+		<x> 0 </x>
+		<y> 0 </y>
+		<z> 1 </z>
+	</axis>
+  </animation>
+
+
+
+<!-- OFF-->
+  <animation>
+	<type>pick</type>
+	<visible>false</visible>
+	<object-name>OFF</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-assign</command>
+			<property>consumables/fuel/tank-selector</property>
+			<value>2</value>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>sim/sound/click</property>
+		</binding>
+	</action>
+  </animation>
+
+
+</PropertyList>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>carpet.ac</path>
+
+ <animation>
+	<type>material</type>
+	<object-name>rud-pedal-LH</object-name>
+	<object-name>rud-pedal-RH</object-name>   
+	<emission>
+		<factor-prop>systems/electrical/outputs/instrument-lights-norm</factor-prop>
+		<red>   0.50 </red>
+		<green> 0.25 </green>
+		<blue>  0.25 </blue>
+	</emission>
+ </animation>
+
+
+ <animation> 
+	<type>translate</type>
+	<object-name>rud-pedal-LH</object-name>
+	<property>/surface-positions/rudder-pos-norm</property>
+	<interpolation>
+		<entry><ind>-1 </ind><dep> 0.03</dep></entry>
+		<entry><ind> 0 </ind><dep> 0   </dep></entry>
+		<entry><ind> 1 </ind><dep>-0.03</dep></entry>
+	</interpolation>
+	<axis> 
+ 		<x>  1 </x>
+		<y>  0 </y>
+		<z>  0 </z>
+	</axis>
+ </animation>  
+
+ <animation> 
+	<type>translate</type>
+	<object-name>rud-pedal-RH</object-name>
+	<property>/surface-positions/rudder-pos-norm</property>
+	<interpolation>
+		<entry><ind>-1 </ind><dep>-0.03</dep></entry>
+		<entry><ind> 0 </ind><dep> 0   </dep></entry>
+		<entry><ind> 1 </ind><dep> 0.03</dep></entry>
+	</interpolation>
+	<axis> 
+ 		<x>  1 </x>
+		<y>  0 </y>
+		<z>  0 </z>
+	</axis>
+ </animation>        
+ 
+</PropertyList>
+
