@@ -3,26 +3,11 @@
 
   <sim include="Nasal/views.xml">
 	<fuel-fraction>1.0</fuel-fraction>
-		<startup>
-			<splash-texture>Aircraft/FA-200/splash.png</splash-texture>
-		</startup>
-	<previews>
-		<preview>
-			<type>exterior</type>
-			<splash type="bool">true</splash>
-			<path>Splash/exterior1.jpg</path>
-		</preview>
-		<preview>
-			<type>exterior</type>
-			<splash type="bool">true</splash>
-			<path>Splash/exterior2.jpg</path>
-		</preview>
-		<preview>
-			<type>exterior</type>
-			<splash type="bool">true</splash>
-			<path>Splash/exterior3.jpg</path>
-		</preview>
-	</previews>
+
+	<startup>
+		<splash-texture>Aircraft/FA-200/splash.png</splash-texture>
+	</startup>
+
 	<sound>
 		<path archive="y">Aircraft/FA-200/Sounds/FA-200-sound.xml</path>
 	</sound>

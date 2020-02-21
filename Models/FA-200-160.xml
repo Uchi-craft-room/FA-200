@@ -147,6 +147,8 @@
 	<object-name>rudder-trim</object-name>
 	<object-name>aileron-LH</object-name>
 	<object-name>aileron-RH</object-name>
+	<object-name>flap-LH</object-name>
+	<object-name>flap-RH</object-name>
 	<object-name>elevator</object-name>
 	<object-name>elevator-trim</object-name>
 	<object-name>grille-LH</object-name>
@@ -159,7 +161,7 @@
 	<object-name>htub</object-name>
 	<object-name>hatch</object-name>
 	<object-name>spinner</object-name>
-	<object-name>prop </object-name>
+	<object-name>prop</object-name>
 	<object-name>prop-low</object-name>
 	<object-name>prop-high</object-name>
 	<object-name>rear-roof-LH</object-name>
@@ -400,6 +402,9 @@
 	<object-name>rudder-trim</object-name>
 	<object-name>tail-rod-LH</object-name>
 	<object-name>tail-rod-RH</object-name>
+	<object-name>lighting-tail</object-name>
+        <object-name>nav-light-tail</object-name>
+	<object-name>Tail-Light</object-name>
 	<property>surface-positions/rudder-pos-norm</property>
 	<interpolation>
 		<entry><ind> -1.00 </ind><dep>  25.0 </dep></entry>
@@ -1050,8 +1055,9 @@
 
   <animation>
 	<type>select</type>
+        <object-name>Green</object-name>
+        <object-name>Red</object-name>
 	<object-name>Tail-Light</object-name>
-        <object-name>nav-light-left</object-name>
         <object-name>nav-light-right</object-name>
         <object-name>nav-light-left</object-name>
         <object-name>nav-light-tail</object-name>

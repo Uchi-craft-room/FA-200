@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+<model>
+<livery>
+<name type="string">FHI-180</name>
+<texture>Liveries/FHI-180.png</texture>
+</livery>
+<livery-logo>
+<texture>Liveries/FHI-180.png</texture>
+</livery-logo>
+</model>
+</sim>
+
+</PropertyList>

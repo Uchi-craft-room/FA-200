@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/yoke/yoke.xml</path>
+	<offsets>
+		<x-m> 0 </x-m>
+		<y-m> 0 </y-m>
+		<z-m> 0 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/visor/visor.xml</path>
+	<offsets>
+		<x-m> 0 </x-m>
+		<y-m> 0 </y-m>
+		<z-m> 0 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/carpet/carpet.xml</path>
+	<offsets>
+		<x-m> 0 </x-m>
+		<y-m> 0 </y-m>
+		<z-m> 0 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/label/label.xml</path>
+	<offsets>
+		<x-m> 0 </x-m>
+		<y-m> 0 </y-m>
+		<z-m> 0 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/ai/adi.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.280 </y-m>
+		<z-m> 0.220 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/alt/alt.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.180 </y-m>
+		<z-m> 0.220 </z-m>
+	</offsets>
+</model>
+
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/asi/asi.xml</path>
+	<offsets>
+		<x-m>-0.695 </x-m>
+		<y-m>-0.380 </y-m>
+		<z-m> 0.220 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/hi/hi.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.280 </y-m>
+		<z-m> 0.120 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/vsi/vsi.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.180 </y-m>
+		<z-m> 0.120 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/tc/tc.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.380 </y-m>
+		<z-m> 0.120 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/vac/vac.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.468 </y-m>
+		<z-m> 0.220 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/M877/M877.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.468 </y-m>
+		<z-m> 0.120 </z-m>
+	</offsets>
+</model>
+
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/vor/vor.xml</path>
+	<offsets>
+		<x-m>-0.695 </x-m>
+		<y-m>-0.090 </y-m>
+		<z-m> 0.270 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/acc/accel.xml</path>
+	<offsets>
+		<x-m>-0.695 </x-m>
+		<y-m>-0.090 </y-m>
+		<z-m> 0.170 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/parking-brake/brake-knob.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.160 </y-m>
+		<z-m>-0.030 </z-m>
+                <pitch-deg> 0 </pitch-deg>
+                <roll-deg>  0 </roll-deg>
+	</offsets>
+</model>
+
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/BatteryGauge/BatteryGauge.xml</path>
+	<offsets>
+
+		<x-m>-0.700 </x-m>
+		<y-m> 0.190 </y-m>
+		<z-m> 0.173 </z-m>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/FuelGauge/FuelGauge.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.090 </y-m>
+		<z-m> 0.070 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/kma20/kma20.xml</path>
+	<offsets>
+		<x-m>-0.710 </x-m>
+		<y-m> 0.050 </y-m>
+		<z-m> 0.260 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/kns80/kns80.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.050 </y-m>
+		<z-m> 0.200 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/kx165/kx165-1.xml</path>
+	<offsets>
+		<x-m>-0.710 </x-m>
+		<y-m> 0.050 </y-m>
+		<z-m> 0.135 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/kt70/kt70.xml</path>
+	<offsets>
+		<x-m>-0.703 </x-m>
+		<y-m> 0.050 </y-m>
+		<z-m> 0.085 </z-m>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/mp/mp.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.200 </y-m>
+		<z-m> 0.260 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/tach/tach.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.300 </y-m>
+		<z-m> 0.260 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/cyl-temp/cyl-temp.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.390 </y-m>
+		<z-m> 0.270 </z-m>
+	</offsets>
+</model>
+
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/fuel-press/fuel-press.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.265 </y-m>
+		<z-m> 0.173 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/oil-temp/oil-temp.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.190 </y-m>
+		<z-m> 0.097 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/oil-press/oil-press.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.265 </y-m>
+		<z-m> 0.097 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/dg/dg.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.000 </y-m>
+		<z-m> 0.380 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/outer_temp/outer_temp.xml</path>
+	<offsets>
+		<x-m>-0.540 </x-m>
+		<y-m>-0.070 </y-m>
+		<z-m> 0.645 </z-m>
+                <pitch-deg> 60 </pitch-deg>
+                <roll-deg>  0 </roll-deg>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/Lights/stall-lamp.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.020 </y-m>
+		<z-m> 0.290 </z-m>
+                <pitch-deg> 0 </pitch-deg>
+                <roll-deg>  0 </roll-deg>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/magneto-switch/mags.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.475 </y-m>
+		<z-m>-0.025 </z-m>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/master.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.415 </y-m>
+		<z-m> 0.025 </z-m>
+	</offsets>
+</model>
+
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/fuel-boost.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.385 </y-m>
+		<z-m> 0.025 </z-m>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/beacon-lights.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.350 </y-m>
+		<z-m> 0.025 </z-m>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/landing-lights.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.318 </y-m>
+		<z-m> 0.025 </z-m>
+	</offsets>
+</model>
+
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/nav-lights.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.415 </y-m>
+		<z-m>-0.040 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/pitot-heat.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.383 </y-m>
+		<z-m>-0.040 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/dome-light.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.351 </y-m>
+		<z-m>-0.040 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/switches/map-light.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.320 </y-m>
+		<z-m>-0.040 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/LT/LT.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m>-0.270 </y-m>
+		<z-m>-0.050 </z-m>
+                <roll-deg> 0 </roll-deg>
+	</offsets>
+</model>
+
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/power_lever/power_lever-180.xml</path>
+	<offsets>
+		<x-m>-0.635 </x-m>
+		<y-m> 0.015 </y-m>
+		<z-m>-0.103 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/defroster-knob/defroster-knob.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.118 </y-m>
+		<z-m>-0.040 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/altair-heat/altair-heat.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.160 </y-m>
+		<z-m>-0.010 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/cabin-heat/cabin-heat.xml</path>
+	<offsets>
+		<x-m>-0.700 </x-m>
+		<y-m> 0.210 </y-m>
+		<z-m>-0.010 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/rudder-trim/rudder-trim.xml</path>
+	<offsets>
+		<x-m>-0.640 </x-m>
+		<y-m> 0.050 </y-m>
+		<z-m>-0.370 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/fuel-selector/fuel-selector.xml</path>
+	<offsets>
+		<x-m>-0.610 </x-m>
+		<y-m>-0.050 </y-m>
+		<z-m>-0.408 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/elev-trim/trimwheel.xml</path>
+	<offsets>
+		<x-m>-0.380 </x-m>
+		<y-m>-0.035 </y-m>
+		<z-m>-0.330 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/FA-200/Models/interior/Instruments/flap-lever/flap-lever.xml</path>
+	<offsets>
+		<x-m>-0.050 </x-m>
+		<y-m> 0.028 </y-m>
+		<z-m>-0.380 </z-m>
+	</offsets>
+</model>
+
+
+</PropertyList>
+
+
