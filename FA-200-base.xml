@@ -61,6 +61,7 @@
 	<FA-200>
 		<file>Aircraft/FA-200/Nasal/electrical.nas</file>
 		<file>Aircraft/FA-200/Nasal/light.nas</file>
+		<file>Aircraft/FA-200/Nasal/light-manager.nas</file>
 		<file>Aircraft/FA-200/Nasal/liveries.nas</file>
 		<file>Aircraft/FA-200/Nasal/immat.nas</file>
 		<file>Aircraft/FA-200/Nasal/instruments.nas</file>
@@ -68,7 +69,6 @@
 		<file>Aircraft/FA-200/Nasal/vhf22.nas</file>
 		<file>Aircraft/FA-200/Nasal/vir32.nas</file>
 		<file>Aircraft/FA-200/Nasal/kma20.nas</file>
-		<file>Aircraft/FA-200/Nasal/light-manager.nas</file>
 		<file>Aircraft/FA-200/Nasal/FA-200.nas</file>
 	</FA-200>    
 	<M877>

@@ -4,7 +4,7 @@
 
   <sim>		
 	<description>FA-200-180 (YASim)</description>
-	<long-description>Ver.1.1</long-description>
+	<long-description>Ver.1.2</long-description>
 	<author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
 	<rating>
 		<FDM type="int">0</FDM>
@@ -12,6 +12,7 @@
 		<cockpit type="int">0</cockpit>
 		<model type="int">0</model>
 	</rating>
+	<variant-of>FA-200-160</variant-of>
 	<flight-model archive="y">yasim</flight-model>
 	<aero archive="y">FA-200-180-yasim</aero>
 
@@ -39,6 +40,12 @@
 	<startup>
 		<splash-texture>Aircraft/FA-200/splash-180.png</splash-texture>
 	</startup>
+
+  <nasal>
+	<FA-200>
+		<file>Aircraft/FA-200/Nasal/light-manager-180.nas</file>
+	</FA-200>    
+  </nasal>
 
   </sim>
 </PropertyList>

@@ -4,7 +4,7 @@
 
   <sim>		
 	<description>FA-200-160 (YASim)</description>
-	<long-description>Ver.1.1</long-description>
+	<long-description>Ver.1.2</long-description>
 	<author>Hitoshi Uchida 'HiTouch'(3D/FDM)</author>
 	<rating>
 		<FDM type="int">0</FDM>
